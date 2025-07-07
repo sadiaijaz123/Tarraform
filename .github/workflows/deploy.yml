@@ -25,13 +25,13 @@ jobs:
       - name: Terraform Plan
         run: |
           terraform plan \
-            -var="client_id=${{ secrets.ARM_CLIENT_ID }}" \
-            -var="client_secret=${{ secrets.ARM_CLIENT_SECRET }}" \
-            -var="tenant_id=${{ secrets.ARM_TENANT_ID }}"
+            -var="client_id= c14f7b34-dfb2-4fad-b5d4-140f7e4c180e "\
+            -var="client_secret= ra98Q~AdPpqEiDfszHsEBC5K54ybKHxC6Qkm6cy1" \
+            -var="tenant_id= 4db1d822-dd16-4b4c-a18b-4eed8f5949f1 "
 
       - name: Terraform Apply
         run: |
           terraform apply -auto-approve \
-            -var="client_id=${{ secrets.ARM_CLIENT_ID }}" \
-            -var="client_secret=${{ secrets.ARM_CLIENT_SECRET }}" \
-            -var="tenant_id=${{ secrets.ARM_TENANT_ID }}"
+            -var="client_id= c14f7b34-dfb2-4fad-b5d4-140f7e4c180e " \
+            -var="client_secret= ra98Q~AdPpqEiDfszHsEBC5K54ybKHxC6Qkm6cy1 " \
+            -var="tenant_id= 4db1d822-dd16-4b4c-a18b-4eed8f5949f1"
