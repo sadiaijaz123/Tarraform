@@ -34,4 +34,4 @@ jobs:
           terraform apply -auto-approve \
             -var="client_id=${{ secrets.ARM_CLIENT_ID }}" \
             -var="client_secret=${{ secrets.ARM_CLIENT_SECRET }}" \
-            -var="tenant_id=${{ secrets.ARM_TENANT_ID }}"
+             -var="tenant_id=${{ secrets.ARM_TENANT_ID }}"\
